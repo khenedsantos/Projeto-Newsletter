@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Papo de Liderança - Newsletter</title>
-    <!-- Link para o CSS externo -->
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Papo de Liderança - Newsletter</title>
+    
+        <!-- CSS Principal -->
+        <link rel="stylesheet" href="../css/style.css">
+    
+        <!-- CSS do Carrossel -->
+        <link rel="stylesheet" href="../css/carrossel.css">
+    
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+        <!-- Font Awesome (ícones) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>    
+
 <body>
     <!-- Navbar Responsiva -->
     <nav>
@@ -34,7 +46,7 @@
     </section>
 
     <!-- Seção de Inscrição -->
-    <section class="subscription">
+    <section id="subscription" class="subscription">
         <div class="container">
             <h2>Assine nossa Newsletter</h2>
             <p>Receba insights exclusivos diretamente no seu e-mail.</p>
@@ -45,20 +57,48 @@
         </div>
     </section>
 
-    <!-- Seção de Conteúdo Recente -->
-    <section class="recent-content">
-        <div class="container">
-            <h2>Últimas Edições</h2>
-            <article>
-                <h3>Título do Artigo 1</h3>
-                <p>Resumo breve do conteúdo da edição...</p>
-                <a href="#">Leia mais</a>
-            </article>
-            <article>
-                <h3>Título do Artigo 2</h3>
-                <p>Resumo breve do conteúdo da edição...</p>
-                <a href="#">Leia mais</a>
-            </article>
+    <!-- ============================= -->
+    <!-- SEÇÃO DE ÚLTIMAS EDIÇÕES COM CARROSSEL -->
+    <!-- ============================= -->
+    <section id="ultimas-edicoes" class="customer-feedback">
+        <div class="container text-center">
+            <h2 class="section-title">Últimas Edições</h2>
+            <div class="owl-carousel feedback-slider">
+
+                <!-- EDIÇÃO 1 -->
+                <div class="feedback-slider-item">
+                    <img src="img/edicao1.jpg" class="center-block img-circle" alt="Edição 1">
+                    <h3 class="customer-name">Edição 01</h3>
+                    <p>Descubra insights sobre liderança e crescimento na nossa primeira edição.</p>
+                    <a href="#">Leia mais</a>
+                    <span class="light-bg customer-rating" data-rating="5">
+                        5 <i class="fa fa-star"></i>
+                    </span>
+                </div>
+
+                <!-- EDIÇÃO 2 -->
+                <div class="feedback-slider-item">
+                    <img src="img/edicao2.jpg" class="center-block img-circle" alt="Edição 2">
+                    <h3 class="customer-name">Edição 02</h3>
+                    <p>Explorando tendências e estratégias para liderar com sucesso.</p>
+                    <a href="#">Leia mais</a>
+                    <span class="light-bg customer-rating" data-rating="4">
+                        4 <i class="fa fa-star"></i>
+                    </span>
+                </div>
+
+                <!-- EDIÇÃO 3 -->
+                <div class="feedback-slider-item">
+                    <img src="img/edicao3.jpg" class="center-block img-circle" alt="Edição 3">
+                    <h3 class="customer-name">Edição 03</h3>
+                    <p>Entrevista exclusiva com grandes líderes do mercado.</p>
+                    <a href="#">Leia mais</a>
+                    <span class="light-bg customer-rating" data-rating="5">
+                        5 <i class="fa fa-star"></i>
+                    </span>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -68,5 +108,18 @@
             <p>&copy; 2025 Papo de Liderança. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- ============================= -->
+    <!-- SCRIPTS EXTERNOS E ARQUIVOS JS -->
+    <!-- ============================= -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Nosso Script Personalizado -->
+    <script src="../js/script.js"></script>
 </body>
 </html>
