@@ -73,6 +73,28 @@
 }
 
 /* Estilo do Owl Carousel */
+
+/* Ajustes gerais de largura */
+#ultimas-edicoes .owl-carousel {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Ajuste para tablets */
+@media (max-width: 1024px) {
+    #ultimas-edicoes .owl-carousel {
+        max-width: 600px;
+    }
+}
+
+/* Ajuste para celulares */
+@media (max-width: 768px) {
+    #ultimas-edicoes .owl-carousel {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
 .owl-nav i {
     color: #D4AF37;
     font-size: 24px;
