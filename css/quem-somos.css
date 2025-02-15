@@ -1,0 +1,108 @@
+/* ============================= */
+/* SEÇÃO SOBRE A NEWSLETTER */
+/* ============================= */
+.sobre-section {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif; /* Aplicando a nova fonte */
+}
+
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.sobre-texto {
+    flex: 1 1 50%;
+    text-align: left;
+    animation: fadeInLeft 1s ease;
+}
+
+.sobre-texto h2 {
+    font-size: 32px;
+    color: #1A237E;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.sobre-texto p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.btn-sobre {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #D4AF37;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-sobre:hover {
+    background-color: #b38e22;
+}
+
+.sobre-imagem {
+    flex: 1 1 40%;
+    text-align: center;
+    animation: fadeInRight 1s ease;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animações */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-texto {
+        text-align: center;
+    }
+
+    .btn-sobre {
+        margin-top: 15px;
+    }
+}
