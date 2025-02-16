@@ -1,8 +1,4 @@
-/* Importar a fonte Playfair Display para títulos */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
-/* Importar a fonte Lora para textos */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap');
 
 
 /* Estilos Gerais */
@@ -19,18 +15,18 @@
     background-color: var(--primary-color);
     color: var(--background-color);
     text-align: center;
-    padding: 50px 20px;
+    padding: 70px 20px;
 }
 
 /* Aplicar ao Hero Section */
 .hero h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', serif;
     font-size: 2.5rem;
     font-weight: 700;
 }
 
 .hero p {
-    font-family: 'Lora', serif;
+    font-family: 'Poppins', serif;
     font-size: 1.2rem;
     line-height: 1.6;
 }
@@ -55,7 +51,7 @@
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
@@ -64,12 +60,41 @@ body {
 
 /* Navbar Responsiva */
 nav {
-    font-family: 'Lora', serif;
+    font-family: 'Poppins', serif;
     font-size: 1rem;
     line-height: 1;
     background-color: var(--primary-color);
-    padding: 15px 0;
+    padding: 10px 0;
 }
+
+/* Estilo para o nome ao lado do botão */
+.navbar-logo {
+    font-family: 'Poppins', sans-serif; /* Ou a fonte principal da sua newsletter */
+    color: #fff;
+    font-size: 19px;
+    font-weight: 550;
+    vertical-align: middle;
+    text-transform: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-align: left;
+}
+
+.navbar-logo:hover {
+    color: #D4AF37;
+}
+
+.menu-toggle {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 nav .container {
     display: flex;
@@ -137,7 +162,7 @@ header {
 
 /* Seção de Inscrição */
 .subscription {
-    font-family: 'Lora', serif;
+    font-family: 'Poppins', serif;
     font-size: 1rem;
     line-height: 1;
     text-align: center;
@@ -198,4 +223,10 @@ footer {
     text-align: center;
     padding: 5px;
     margin-top: 50px;
+}
+
+/* Remover a caixa alta para esse título */
+.titulo-normal {
+    text-transform: none;
+    text-align: center;
 }
