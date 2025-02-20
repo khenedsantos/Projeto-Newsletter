@@ -142,28 +142,37 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     padding-bottom: 50px;
+    color: rgb(4, 4, 152);
+    
+}
+
+.subscription h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-top: 35px;
 }
 
 .subscription input {
+    font-size: 1rem;
     padding: 10px;
-    width: 300px;
-    border: 1px solid black;
+    width: 400px;
+    height: 30px;
+    border: 3px solid rgb(4, 4, 152);
     font-weight: 400;
     border-radius: 10px;
 }
 
 .subscription button {
-    padding: 10px 20px;
+    padding: 18px;
+    font-size: 1rem;
     border-radius: 10px;
-    font-weight: bold;
+    font-weight: 700;
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: rgb(4, 4, 152);;
     border: 1px solid white;
     background-color: #f0f0f0; /* Cinza claro */
     box-shadow: 2px 2px 5px rgba(59, 59, 59, 0.3); /* Aumenta a sombra no hover */
-    transition: all 0.3s ease;
-  
-    
+    transition: all 0.3s ease;  
 }
 
 .subscription button:hover {
