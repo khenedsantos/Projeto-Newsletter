@@ -1,0 +1,127 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+/* Estilizando o botão do menu suspenso */
+.menu-toggle {
+    font-size: 16px; /* Tamanho do ícone ☰ */
+    font-weight: 600;
+    background: #f0f0f0; /* Sem fundo */
+    border: none; /* Remove a borda */
+    color: rgb(0, 0, 0); /* Cor do ícone */
+    cursor: pointer; /* Muda o cursor para mãozinha */
+    padding: 8px 12px; /* Ajusta o espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 2px 2px 5px  rgba(59, 59, 59, 0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.menu-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFC107;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Alinha os itens nas laterais */
+    align-items: center;
+    padding: 15px 20px; /* Espaçamento interno */
+    background-color: #ffffff; /* Azul escuro */
+    color: rgb(0, 0, 0);
+    width: 100%;
+    max-width: 1200px; /* Define um limite de largura */
+    margin: 0 auto; /* Centraliza a navbar */
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre "Papo de Liderança" e "Anuncie Conosco" */
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre "Login", "Subscribe" e o ☰ */
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+/* Botão "Fazer Login" */
+.login-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    background-color: #f0f0f0; /* Cinza claro */
+    box-shadow: 2px 2px 5px rgba(59, 59, 59, 0.3); /* Aumenta a sombra no hover */
+    transition: all 0.3s ease;
+}
+.login-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFC107;
+}
+
+/* Botão "Subscribe" */
+.subscribe-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #f0f0f0; /* Cinza claro */
+    color: #000000; /* Azul escuro */
+    box-shadow: 2px 2px 5px rgba(59, 59, 59, 0.3); /* Aumenta a sombra no hover */
+    transition: all 0.3s ease;
+}
+.subscribe-btn:hover {
+    background-color: #FFC107; /* Amarelo mais forte */
+}
+
+/* Nome "Papo de Liderança" */
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    margin-right: 15px;
+}
+
+/* "Anuncie Conosco" */
+.anuncie {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.anuncie:hover {
+    color: #FFD700; /* Dourado ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px; /* Reduz o padding para evitar corte */
+    }
+
+    .navbar-left,
+    .navbar-right {
+        gap: 10px; /* Diminui o espaço entre os itens */
+    }
+
+    .btn {
+        font-size: 14px; /* Reduz um pouco o tamanho dos botões */
+        padding: 6px 12px;
+    }
+}

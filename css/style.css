@@ -71,8 +71,8 @@ nav {
 .navbar-logo {
     font-family: 'Poppins', sans-serif; /* Ou a fonte principal da sua newsletter */
     color: #fff;
-    font-size: 19px;
-    font-weight: 550;
+    font-size: 16px;
+    font-weight: 400;
     vertical-align: middle;
     text-transform: none;
     cursor: pointer;
@@ -88,7 +88,7 @@ nav {
     display: inline-block;
     vertical-align: middle;
     margin-right: 5px;
-    font-size: 28px;
+    font-size: 22px;
     background: none;
     border: none;
     color: #fff;
@@ -147,7 +147,7 @@ nav ul li a:hover {
         background: none;
         border: none;
         color: var(--background-color);
-        font-size: 20px;
+        font-size: 16px;
         cursor: pointer;
     }
 }
