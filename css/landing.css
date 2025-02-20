@@ -125,3 +125,48 @@ body {
         padding: 6px 12px;
     }
 }
+
+/* Seção de Inscrição */
+.subscription {
+    font-family: 'Poppins', serif;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    padding: 120px 80px;
+    border: 1px solid white;
+    background-color: #ffffff; /* Cinza claro */
+    transition: all 0.3s ease;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.subscription input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid black;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.subscription button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    background-color: #f0f0f0; /* Cinza claro */
+    box-shadow: 2px 2px 5px rgba(59, 59, 59, 0.3); /* Aumenta a sombra no hover */
+    transition: all 0.3s ease;
+  
+    
+}
+
+.subscription button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFC107;
+}
