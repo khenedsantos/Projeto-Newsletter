@@ -199,7 +199,6 @@ footer {
 .footer-links {
     display: flex;
     flex-direction: column;
-    gap: 5px;
 }
 
 .footer-links h4 {
@@ -241,12 +240,14 @@ footer {
     align-items: center;
     margin-top: 25px; /* Ajusta o espaçamento */
     padding: 10px 20px;
+    
 }
 
 .footer-bottom a {
     font-size: 12px;
     text-decoration: none;
     color: #000;
+    margin: 0 8px; /* Adiciona espaçamento lateral de 15px */
 }
 
 .footer-bottom a:hover {
