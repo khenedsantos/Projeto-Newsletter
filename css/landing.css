@@ -38,22 +38,27 @@ html, body {
 
 .navbar-left {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    align-items: center; /* Mantém os itens alinhados na mesma linha */
+    gap: 10px; /* Espaço entre a logo e o nome */
 }
 
-.navbar-right {
+.navbar-logo {
     display: flex;
-    align-items: center;
-    gap: 5px;
+    flex-direction: column; /* Mantém a frase abaixo */
+    align-items: flex-start; /* Alinha tudo à esquerda */
 }
 
-/* Nome "Papo de Liderança" */
+.navbar-logo img {
+    width: 40px !important;  /* Força o tamanho */
+    height: auto !important; /* Mantém a proporção */
+    max-width: 50px !important; 
+    border-radius: 5px;
+}
+
 .logo {
-    font-size: 14px;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
 }
 
 /* "Anuncie Conosco" */
@@ -227,7 +232,7 @@ footer {
 }
 
 .logo-text {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: white;
 }
